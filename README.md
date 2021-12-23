@@ -10,8 +10,10 @@ Three ways to use Army_Engine:
 -> Using Docker Image
 1) Make sure your system have installed Docker
 2) Run below two command in your system
-  -> sudo docker run --name jinesh-mysql-app -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=jinesh_db -e PMA_HOST=jinesh-mysql-app -p 3306:3306 -d mysql
-  -> sudo docker run --link jinesh-mysql-app -p 80:80 -d jineshpatel02/army_engine
+  -> 
+  sudo docker run --name jinesh-mysql-app -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=jinesh_db -e PMA_HOST=jinesh-mysql-app -p 3306:3306 -d mysql
+  -> 
+  sudo docker run --link jinesh-mysql-app -p 80:80 -d jineshpatel02/army_engine
 3) Wait for 1 to 2 min
 4) Open any desired browser and type in URL "localhost".
 5) And BOOM internal army_engine is working in your system.
@@ -22,7 +24,8 @@ Three ways to use Army_Engine:
 3) Go to docker-compose.yml directory and same directory open CMD or Terminal.
 4) Make sure docker-compose is installed in your system. If not available in your system then first install it.
 5) Run below command in Terminal or CMD
-   -> sudo docker-compose up --build
+   -> 
+   sudo docker-compose up --build
 6) Boom Army_Engine is working.
 
 -> Using XAMPP
